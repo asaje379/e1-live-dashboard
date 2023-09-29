@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="main.css" />
+    <title>Live Dashboard - ADMIN</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+      integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div class="title-bar">Live Dashboard - Administration</div>
+    <div class="container">
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-description">Total personnes</div>
+          <h1 id="total">3</h1>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-description">Total hommes</div>
+          <h2 id="men">2</h2>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-description">Total femmes</div>
+          <h2 id="women">1</h2>
+        </div>
+      </div>
+
+      <div
+        class="list-container"
+        id="persons"></div>
+    </div>
+
+    <script
+      src="main.js"
+      defer></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="main.css" />
+    <title>Live Dashboard</title>
+  </head>
+  <body>
+    <div class="title-bar">Live Dashboard - App</div>
+    <div class="container">
+      <h1>Please, fill the form</h1>
+      <form>
+        <div class="form-group">
+          <label for="lastname">Lastname</label>
+          <input
+            name="lastname"
+            id="lastname"
+            type="text" />
+        </div>
+
+        <div class="form-group">
+          <label for="firstname">Firstname</label>
+          <input
+            name="firstname"
+            id="firstname"
+            type="text" />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select
+            name="gender"
+            id="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+        </div>
+
+        <button>Send your information</button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+      integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
