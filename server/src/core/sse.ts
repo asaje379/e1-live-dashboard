@@ -28,7 +28,7 @@ export class Sse {
 
   broadcast<T>(data: T) {
     for (const client of Sse.clients) {
-      client.response.write(`data: ${JSON.stringify(data)}\n\n`);
+      client.response.write(`data: ${JSON.stringify({ data })}\n\n`);
     }
   }
 }
